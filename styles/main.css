@@ -57,6 +57,13 @@ a {
   color: white;
 }
 
+.fullpagelink {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+
 .main-bg {
     background-image: url(../images/main-bg-mob.png);
     background-size: auto;
