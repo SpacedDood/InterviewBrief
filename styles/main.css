@@ -1,0 +1,109 @@
+html, body {
+  font-family: "Roboto Regular";
+  padding: 0;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-wrap {
+    max-width: 1310px;
+}
+
+.nav {
+  background-color: #211551;
+  padding: 5px 0;
+  height: 50px;
+  width: 100%;
+}
+
+.nav .content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.nav-l {
+  padding-left: 50px;
+}
+
+.nav-r {
+  display: flex;
+  flex-direction: row;
+  padding-right: 50px;
+}
+
+.btn.login {
+  background: #3f74d9;
+  padding: 10px;
+  border-radius: 3px;
+  width: 100%;
+  min-width: 80px;
+  max-width: 200px;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.main-bg {
+    background-image: url(../images/main-bg.png);
+    background-size: auto;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+
+.headlines {
+  position: absolute;
+  top: 50px;
+  right: 71px;
+  text-align: center;
+}
+
+.headlines .texts h1 {
+  color: #fff;
+  font-family: "Roboto Black";
+  font-size: 3em;
+}
+
+.headlines .texts h2 {
+  color: #ff008a;
+  font-family: "Roboto Regular";
+  font-style: italic;
+  font-size: 2em;
+}
+
+.kt {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  font-size: 10px;
+  background: #0000007a;
+  width: 100%;
+  padding: 5px 0;
+  margin: -5px 0;
+}
+
+.second-area {
+  background: #110540;
+  color: white;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-cont {
+    background: #0d0431;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer {
+  background-color: #0d0431;
+  width: 100%;
+  color: gray;
+}
