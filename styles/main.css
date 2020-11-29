@@ -8,9 +8,7 @@ a {
     text-decoration: none;
 }
 
-.content-wrap {
-    max-width: 1310px;
-}
+
 
 .nav {
   background-color: #211551;
@@ -22,17 +20,29 @@ a {
 .nav .content-wrap {
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .nav-l {
-  padding-left: 50px;
+  padding-left: 20px;
+}
+
+.pclogo {
+  display: block;
+  width: 120px;
 }
 
 .nav-r {
   display: flex;
   flex-direction: row;
-  padding-right: 50px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.navicons {
+    padding-right: 20px;
+    height: 24px;
 }
 
 .btn.login {
@@ -48,7 +58,7 @@ a {
 }
 
 .main-bg {
-    background-image: url(../images/main-bg.png);
+    background-image: url(../images/main-bg-mob.png);
     background-size: auto;
     background-position: center;
     height: 500px;
@@ -57,33 +67,69 @@ a {
 
 .headlines {
   position: absolute;
-  top: 50px;
-  right: 71px;
   text-align: center;
+  width: 100%;
 }
 
 .headlines .texts h1 {
-  color: #fff;
-  font-family: "Roboto Black";
-  font-size: 3em;
+    color: #fff;
+    font-family: "Roboto Black";
+    font-size: 2em;
+    line-height: 1em;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .headlines .texts h2 {
-  color: #ff008a;
-  font-family: "Roboto Regular";
-  font-style: italic;
-  font-size: 2em;
+    color: #ff008a;
+    font-family: "Roboto Regular";
+    font-size: 1em;
+    line-height: 0.5em;
+    font-weight: normal;
+    text-transform: uppercase;
 }
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+}
+
+
+.btn.primary {
+  background: green;
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 23px;
+  font-family: "Roboto Black";
+  width: 100%;
+  min-width: 80px;
+  max-width: 200px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.navicons-mob {
+  position: absolute;
+  bottom: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+
 
 .kt {
   position: absolute;
   bottom: 5px;
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   background: #0000007a;
   width: 100%;
   padding: 5px 0;
   margin: -5px 0;
+  text-align: center;
 }
 
 .second-area {
@@ -91,9 +137,72 @@ a {
   color: white;
 }
 
-.logos {
+.step-cont {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
   display: flex;
   flex-direction: row;
+  margin: 10px;
+}
+
+.step-no {
+    border: solid 3px white;
+    border-radius: 100px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    margin: 0 20px;
+}
+
+.step .text {
+  font-family: "Roboto Black";
+  text-transform: uppercase;
+  font-size: 2em;
+  max-width: 30px;
+  line-height: 1em;
+}
+
+.step .sub-text {
+  font-size: 1em;
+}
+
+.jp-ticker {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.terms-area {
+  background-color: #211551;
+  margin: 10px;
+  padding: 10px;
+}
+
+.terms-expand {
+  color: #ec154a;
+}
+
+.terms-title {
+  padding: 10px;
+  margin: -10px;
+  cursor: pointer;
+}
+
+.terms-content {
+  display: none;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .logo-cont {
@@ -102,8 +211,26 @@ a {
     margin: 10px;
 }
 
+
+
 .footer {
   background-color: #0d0431;
   width: 100%;
   color: gray;
+  display: flex;
+}
+
+.disclaimer {
+    padding: 17px;
+    font-size: 14px;
+}
+
+.disclaimer img {
+  padding-right: 10px;
+}
+
+.disclaimer p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }

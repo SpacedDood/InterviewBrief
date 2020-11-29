@@ -1,0 +1,65 @@
+.show-desk {display: none!important;}
+.show-mob {display: block!important;}
+
+@media screen and (min-width: 900px) {
+
+  body .show-desk {display: block!important;}
+  body .show-mob {display: none!important;}
+
+  .content-wrap {
+    max-width: 1310px;
+    margin: auto;
+    position: relative;
+  }
+
+  body .main-bg {
+    background-image: url(../images/main-bg.png);
+    height: 700px;
+  }
+
+  body .nav-l {
+    padding-left: 50px;
+  }
+
+  body .pclogo {
+    width: 240px;
+  }
+
+  body .nav-r {
+    padding-right: 50px;
+  }
+
+  body .headlines {
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 50%;
+  }
+
+  body .headlines .texts h1 {
+    font-size: 77px;
+  }
+
+  body .headlines .texts h2 {
+    font-size: 40px;
+    margin: 10px
+  }
+
+  body .kt {
+    font-size: 14px;
+  }
+
+  body .step-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  body .logos {
+    justify-content: left;
+  }
+
+  .navicons-mob {
+    display: none;
+  }
+}
